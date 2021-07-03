@@ -1,7 +1,7 @@
 const socketio = require('socket.io');
 
 const listen = (server) => {
-  const io = socketio(server);
+  const io = socketio(server, { cors: { origin: "*" } });
   const roomId = '3TsdhF83PS';
   io.on('connect', (socket) => {
     socket.on('join', ({ user }) => {

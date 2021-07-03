@@ -1,6 +1,5 @@
 const express = require('express');
-// const http = require('http'); // http for local deploy
-const http = require('https'); // https deploy on heroku
+const http = require('http');
 const cors = require('cors');
 
 const PORT = process.env.PORT || 4000;
